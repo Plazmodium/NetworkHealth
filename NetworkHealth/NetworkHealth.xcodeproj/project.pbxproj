@@ -14,6 +14,7 @@
 		2C58C03A2056EE3500DF3B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C58C0382056EE3500DF3B9D /* LaunchScreen.storyboard */; };
 		2C58C0452056EE3500DF3B9D /* NetworkHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58C0442056EE3500DF3B9D /* NetworkHealthTests.swift */; };
 		2C58C0502056EE3500DF3B9D /* NetworkHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58C04F2056EE3500DF3B9D /* NetworkHealthUITests.swift */; };
+		2C58C05E2056EF0E00DF3B9D /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C58C05D2056EF0E00DF3B9D /* ReachabilityStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2C58C04B2056EE3500DF3B9D /* NetworkHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C58C04F2056EE3500DF3B9D /* NetworkHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHealthUITests.swift; sourceTree = "<group>"; };
 		2C58C0512056EE3500DF3B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C58C05D2056EF0E00DF3B9D /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2C58C0362056EE3500DF3B9D /* Assets.xcassets */,
 				2C58C0382056EE3500DF3B9D /* LaunchScreen.storyboard */,
 				2C58C03B2056EE3500DF3B9D /* Info.plist */,
+				2C58C05D2056EF0E00DF3B9D /* ReachabilityStatus.swift */,
 			);
 			path = NetworkHealth;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				2C58C0322056EE3500DF3B9D /* ViewController.swift in Sources */,
 				2C58C0302056EE3500DF3B9D /* AppDelegate.swift in Sources */,
+				2C58C05E2056EF0E00DF3B9D /* ReachabilityStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
