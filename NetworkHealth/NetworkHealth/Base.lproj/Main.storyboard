@@ -42,14 +42,26 @@
                                 <color key="textColor" red="0.0" green="0.77066064323607431" blue="0.039963146608461439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdk-w4-yB1">
+                                <rect key="frame" x="16" y="469" width="343" height="35"/>
+                                <color key="backgroundColor" red="0.92218584217506627" green="0.92218584217506627" blue="0.92218584217506627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="5T2-LB-yPw"/>
+                                    <constraint firstAttribute="width" secondItem="Wdk-w4-yB1" secondAttribute="height" multiplier="343:30" constant="-57.166666666666686" id="dri-2X-3qD"/>
+                                    <constraint firstAttribute="height" constant="35" id="t5S-vp-HhR"/>
+                                </constraints>
+                                <state key="normal" title="Refresh"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wdk-w4-yB1" secondAttribute="bottom" constant="163" id="1ve-kV-uIm"/>
                             <constraint firstItem="agp-QC-tVR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5tT-Hh-FCn"/>
                             <constraint firstItem="Sf7-qx-BTt" firstAttribute="leading" secondItem="agp-QC-tVR" secondAttribute="leading" id="90e-fR-pTp"/>
                             <constraint firstItem="Sf7-qx-BTt" firstAttribute="height" secondItem="agp-QC-tVR" secondAttribute="height" id="BQR-LI-GS5"/>
                             <constraint firstItem="agp-QC-tVR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="303" id="JNH-9r-4AY"/>
                             <constraint firstItem="Sf7-qx-BTt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ko7-0I-ZXy"/>
+                            <constraint firstItem="Wdk-w4-yB1" firstAttribute="leading" secondItem="Sf7-qx-BTt" secondAttribute="leading" id="Uma-ri-rdv"/>
                             <constraint firstItem="Sf7-qx-BTt" firstAttribute="width" secondItem="agp-QC-tVR" secondAttribute="width" id="Z5O-F9-9Nc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -57,6 +69,7 @@
                     <connections>
                         <outlet property="networkBadLbl" destination="Sf7-qx-BTt" id="rxx-XZ-wZ2"/>
                         <outlet property="networkGoodLbl" destination="agp-QC-tVR" id="RuS-nb-RBz"/>
+                        <outlet property="refreshBtn" destination="Wdk-w4-yB1" id="CuC-20-nJI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
