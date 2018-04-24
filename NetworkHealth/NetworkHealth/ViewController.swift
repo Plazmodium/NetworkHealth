@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var refreshBtn: UIButton!
     
     let dispose = DisposeBag()
+    let reachability = ReachabilityStatus()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,9 @@ class ViewController: UIViewController {
             }).disposed(by: self.dispose)
             
             }.disposed(by: dispose)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(checkNetwokStatNotify(notification:)), name: .network, object: nil)
+        NotificationCenter.default.post(name: .network, object: nil)
     }
     
     private func checkNetwokStatus() -> Observable<Bool>{
@@ -51,9 +55,24 @@ class ViewController: UIViewController {
         })
     }
     
+    @objc private func checkNetwokStatNotify(notification:NSNotification){
+        
+        if ReachabilityStatus.isConnectedToNetwork(){
+            print("yar")
+        }else{
+            print("nay")
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+extension Notification.Name{
+    
+     static let network = Notification.Name("network")
+    
 }
 
